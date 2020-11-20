@@ -1,0 +1,19 @@
+{% load static %}
+<div class="container d-flex justify-content-around" style="margin-top: 60px; width: 78%;">
+    <div class="row">
+        {% if pizzas %}
+        {% for pizza in pizzas %}
+        <div class="card" style="width: 18rem; padding: 30px; margin: 30px;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">{{ pizza.name }}</h5>
+                <p class="card-text">{{ pizza.description }}</p>
+                <p class="card-text">R${{ pizza.price }} - {{ pizza.portion }} Porções</p>
+                <a href="#" class="btn btn-outline-success">Veja mais sobre!</a>
+            </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        {% endif %}
+    </div>
+</div>
