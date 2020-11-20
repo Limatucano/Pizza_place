@@ -1,5 +1,6 @@
-__data
-.__data
+.stat
+__data/
+.__data/
 # Django #
 *.log
 *.pot
